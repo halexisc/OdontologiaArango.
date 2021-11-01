@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'montserrat',sans-serif;
+    overflow-x: hidden;
+
+}
+
+/*=============menu==============*/
+
+#menu a {
+font-size: 18px;
+font-weight: bold;
+color: black;
+}
+
+#menu button {
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*=============carrusel==============*/
+
+.carousel-inner{
+    max-height: 30rem ;
+}
+
+/*=============media queries==============*/
+@media (max-width:768px){
+    #intro, #equipo {
+        width: 90% !important;
+          }
+
+          #equipo p {
+              display: none;
+          }
+          .servicio-fila{
+              width: 100% !important;
+              text-align: center;
+          }
+
+          #bg-contacto{
+             top: -110px;
+        }
+}
+
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap:wrap ;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width:  90%;
+        margin:auto;
+        padding-top: 50px;
+    }
+}
+
+
+
+
+
+@media(max-width: 576px){
+     .icono-wrap{
+         flex-wrap: wrap;
+         justify-content: center !important;
+     }
+    }
+
+    .mapa {
+        background: url(../img/ccobelisco.JPG) ;
+        width: 100%;
+        height: 500px;
+    }
+
+    #local{
+        background: #f3f3f3 ;
+        padding-bottom: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapper{
+        width: 50%;
+        margin-left: 100px;
+        padding-top: 150px;
+    }
+
+    /*=============números==============*/
+    #numeros-local div{
+        padding: 0 20px 0 0;
+        height: 48px;
+    }
+
+    #numeros-local div:not(:last-child){
+        border-right: 2px solid #3f3f3f;
+    }
+
+    #numeros-local div:not(:first-child){
+        padding-left: 20px;
+    }
+
+    #numeros-local p{
+        margin: 0;
+    }
+
+    /*=============contácto==============*/
+
+    #bg-contacto{
+        position: relative;
+        top: -130px;
+    }
+    #seccion-contacto {
+        background-color: #1b2a4e;
+        min-height: 500px;
+        position: relative;
+    }
+
+
+    #contenedor-formulario{
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        background: #fbfafa;
+        border-radius: 5px;
+        max-width: 500px;
+
+    }
+
+    #titulo-formulario{
+        color:#3f3f3f;
+    }
+
+  /*=============pie de página==============*/
+
+  footer{
+      background: #1b2a4e ;
+      min-height: 100px;      
+  }
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i{
+    font-size: 2px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
